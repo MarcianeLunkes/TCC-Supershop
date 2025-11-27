@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supershop - Enlatados</title>
+  <link rel="stylesheet" href="enlatado.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Supershop Enlatados</div>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="#produtos">Enlatados</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<a href="../index.html" class="btn-voltar">
+  <span class="setina"></span>
+  Voltar
+</a>
+
+<section class="banner">
+  <h1>Enlatados Práticos!</h1>
+  <p>Perfeitos para facilitar seu dia a dia.</p>
+  <a href="#produtos" class="btn">Ver Enlatados</a>
+</section>
+
+<section id="produtos" class="produtos">
+  <h2>Nossos Enlatados</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="food.jpg" alt="Milho Verde">
+      <h3>Milho Verde</h3>
+      <p>R$ 4,00</p>
+      <button class="comprar" onclick="comprarProduto('Milho Verde', 'R$ 4,00')">Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="food2.jpg" alt="Ervilha">
+      <h3>Ervilha</h3>
+      <p>4,50.</p>
+      <button class="comprar" onclick="comprarProduto('Ervilha', 'R$ 4,50')">Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="tuna.jpg" alt="Atum">
+      <h3>Atum</h3>
+      <p>R$ 12,00.</p>
+      <button class="comprar" onclick="comprarProduto('Atum', 'R$ 12,00')">Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="canned.jpg" alt="Sardinha">
+      <h3>Sardinha</h3>
+      <p>R$ 8,00.</p>
+      <button class="comprar" onclick="comprarProduto('Sardinha', 'R$ 8,00')">Comprar</button>
+    </div>
+
+  </div>
+</section>
+
+<footer id="contato">
+  <p>📍 Rua das Compras, 100 - São Paulo/SP</p>
+  <p>📞 (11) 98765-4321 | ✉️ contato@supershop.com.br</p>
+  <p>&copy; 2025 Supershop - Todos os direitos reservados.</p>
+</footer>
+
+<script>
+function comprarProduto(nome, preco) {
+  const url = `comprar.html?produto=${encodeURIComponent(nome)}&preco=${encodeURIComponent(preco)}`;
+  window.location.href = url;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supershop - Grãos</title>
+  <link rel="stylesheet" href="grao.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Supershop Grãos</div>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="#produtos">Grãos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<a href="../index.html" class="btn-voltar">
+  <span class="setina"></span>
+  Voltar
+</a>
+
+<section class="banner">
+  <h1>Grãos Naturais</h1>
+  <p>Saudáveis e selecionados para sua alimentação.</p>
+  <a href="#produtos" class="btn">Ver Grãos</a>
+</section>
+
+<section id="produtos" class="produtos">
+  <h2>Nossos Grãos</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="2.jpg" alt="Feijão Carioca">
+      <h3>Feijão Carioca</h3>
+      <p>R$ 8,00/kg.</p>
+      <button class="comprar" onclick="comprarProduto('Feijão Carioca', 'R$ 8,00/kg')">Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="rice.jpg" alt="Arroz Branco">
+      <h3>Arroz Branco</h3>
+      <p>R$ 6,00/kg.</p>
+      <button class="comprar" onclick="comprarProduto('Arroz Branco', 'R$ 6,00/kg')">Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="lentil.jpg" alt="Lentilha">
+      <h3>Lentilha</h3>
+      <p>R$ 10,00/kg.</p>
+      <button class="comprar" onclick="comprarProduto('Lentilha', 'R$ 10,00/kg')">Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="chickpea.jpg" alt="Grão de Bico">
+      <h3>Grão de Bico</h3>
+      <p>R$ 12,00/kg.</p>
+      <button class="comprar" onclick="comprarProduto('Grão de Bico', 'R$ 12,00/kg')">Comprar</button>
+    </div>
+
+  </div>
+</section>
+
+<footer id="contato">
+  <p>📍 Rua das Compras, 100 - São Paulo/SP</p>
+  <p>📞 (11) 98765-4321 | ✉️ contato@supershop.com.br</p>
+  <p>&copy; 2025 Supershop - Todos os direitos reservados.</p>
+</footer>
+
+<script>
+function comprarProduto(nome, preco) {
+  const url = `comprar.html?produto=${encodeURIComponent(nome)}&preco=${encodeURIComponent(preco)}`;
+  window.location.href = url;
+}
+</script>
+
+</body>
+</html>

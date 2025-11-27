@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supershop Carnes</title>
+  <link rel="stylesheet" href="carnes.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Supershop Carnes</div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <a href="../index.html" class="btn-voltar">
+    <span class="setina"></span>
+    Voltar
+  </a>
+
+  <section class="banner">
+    <h1>As melhores carnes com preço de mercado!</h1>
+    <p>Qualidade, frescor e confiança no Supershop.</p>
+    <a href="#produtos" class="btn">Ver Produtos</a>
+  </section>
+
+  <section id="produtos" class="produtos">
+    <h2>Nossos Cortes</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1603048297172-c92544798d5a?w=600" alt="Picanha">
+        <h3>Picanha</h3>
+        <p>R$ 79,90 / kg</p>
+        <button class="comprar" onclick="comprarProduto('Picanha', 'R$ 79,90')">Comprar</button>
+      </div>
+
+      <div class="card">
+        <img src="pork-ribs-2374889_640.jpg" alt="Costela">
+        <h3>Costela Bovina</h3>
+        <p>R$ 39,90 / kg</p>
+        <button class="comprar" onclick="comprarProduto('Costela Bovina', 'R$ 39,90')">Comprar</button>
+      </div>
+
+      <div class="card">
+        <img src="steak-1083568_640.jpg" alt="Filé Mignon">
+        <h3>Filé Mignon</h3>
+        <p>R$ 99,90 / kg</p>
+        <button class="comprar" onclick="comprarProduto('Filé Mignon', 'R$ 99,90')">Comprar</button>
+      </div>
+
+      <div class="card">
+        <img src="grilled-chicken-7344499_640.jpg" alt="Frango">
+        <h3>Peito de Frango</h3>
+        <p>R$ 18,90 / kg</p>
+        <button class="comprar" onclick="comprarProduto('Peito de Frango', 'R$ 18,90')">Comprar</button>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contato">
+    <p>📍 Rua das Compras, 100 - São Paulo/SP</p>
+    <p>📞 (11) 98765-4321 | ✉️ contato@supershop.com.br</p>
+    <p>&copy; 2025 Supershop - Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function comprarProduto(nome, preco) {
+      // Redireciona para o site de compra, enviando nome e preço pela URL
+      const url = `comprar.html?produto=${encodeURIComponent(nome)}&preco=${encodeURIComponent(preco)}`;
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>

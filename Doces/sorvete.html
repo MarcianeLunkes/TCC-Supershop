@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supershop - Sorvetes</title>
+  <link rel="stylesheet" href="sorvete.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Supershop Sorvetes</div>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="#produtos">Sorvetes</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<a href="../index.html" class="btn-voltar">
+  <span class="setina"></span>
+  Voltar
+</a>
+
+<section class="banner">
+  <h1>Sorvetes gelados e deliciosos!</h1>
+  <p>Perfeitos para qualquer momento.</p>
+  <a href="#produtos" class="btn">Ver Sorvetes</a>
+</section>
+
+<section id="produtos" class="produtos">
+  <h2>Sabores Disponíveis</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="mora.png" alt="Sorvete de Morango">
+      <h3>Sorvete de Morango</h3>
+      <p><strong>R$ 12,00</strong></p>
+      <button onclick="comprarProduto('Sorvete de Morango', 'R$ 12,00')">Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="cho.png" alt="Sorvete de Chocolate">
+      <h3>Sorvete de Chocolate</h3>
+      <p><strong>R$ 15,00</strong></p>
+      <button onclick="comprarProduto('Sorvete de Chocolate', 'R$ 15,00')">Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="bau.png" alt="Sorvete de Baunilha">
+      <h3>Sorvete de Baunilha</h3>
+      <p><strong>R$ 10,00</strong></p>
+      <button onclick="comprarProduto('Sorvete de Baunilha', 'R$ 10,00')">Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="amo.png" alt="Pote 2L Napolitano">
+      <h3>Picole de amora</h3>
+      <p><strong>R$ 8,00</strong></p>
+      <button onclick="comprarProduto('Pote 2L Napolitano', 'R$ 8,00')">Comprar</button>
+    </div>
+
+  </div>
+</section>
+
+<footer id="contato">
+  <p>📍 Rua das Compras, 100 - SP</p>
+  <p>📞 (11) 98765-4321 | ✉️ contato@supershop.com.br</p>
+  <p>&copy; 2025 Supershop - Todos os direitos reservados.</p>
+</footer>
+
+<script>
+function comprarProduto(nome, preco) {
+  window.location.href = `comprar.html?produto=${encodeURIComponent(nome)}&preco=${encodeURIComponent(preco)}`;
+}
+</script>
+
+</body>
+</html>

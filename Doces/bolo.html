@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supershop - Bolos</title>
+  <link rel="stylesheet" href="bolo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Supershop Bolos</div>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="#produtos">Bolos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<a href="../index.html" class="btn-voltar">
+  <span class="setina"></span>
+  Voltar
+</a>
+
+<!-- BANNER INICIAL -->
+<section class="banner">
+  <h1>Delícias de Bolos Fresquinhos!</h1>
+  <p>Feitos com carinho para todas as ocasiões.</p>
+  <a href="#produtos" class="btn">Ver Bolos</a>
+</section>
+
+<!-- SEÇÃO DE PRODUTOS -->
+<section id="produtos" class="produtos">
+  <h2>Nossos Bolos</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="swede.jpg" alt="Bolo de Chocolate">
+      <h3>Bolo de Chocolate</h3>
+      <p><strong>R$ 25,00</strong></p>
+      <button class="comprar" onclick="comprarProduto('Bolo de Chocolate', 'R$ 25,00')">Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="bolo2.jpg" alt="Bolo de Cenoura">
+      <h3>Bolo de Cenoura</h3>
+      <p><strong>R$ 20,00</strong></p>
+      <button class="comprar" onclick="comprarProduto('Bolo de Cenoura', 'R$ 20,00')">Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="cake.jpg" alt="Bolo de Festa">
+      <h3>Bolo de Festa</h3>
+      <p><strong>R$ 50,00</strong></p>
+      <button class="comprar" onclick="comprarProduto('Bolo de Festa', 'R$ 50,00')">Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="3.jpg" alt="Bolo Brigadeiro">
+      <h3>Bolo Brigadeiro</h3>
+      <p><strong>R$ 30,00</strong></p>
+      <button class="comprar" onclick="comprarProduto('Bolo Brigadeiro', 'R$ 30,00')">Comprar</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTATO -->
+<footer id="contato">
+  <p>📍 Rua das Compras, 100 - São Paulo/SP</p>
+  <p>📞 (11) 98765-4321 | ✉️ contato@supershop.com.br</p>
+  <p>&copy; 2025 Supershop - Todos os direitos reservados.</p>
+</footer>
+
+<script>
+  function comprarProduto(nome, preco) {
+    // Redireciona para o site de compra, enviando nome e preço pela URL
+    const url = `comprar.html?produto=${encodeURIComponent(nome)}&preco=${encodeURIComponent(preco)}`;
+    window.location.href = url;
+  }
+</script>
+
+</body>
+</html>

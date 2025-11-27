@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supershop - Chocolates</title>
+  <link rel="stylesheet" href="chocolate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Supershop Chocolates</div>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="#produtos">Chocolates</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<a href="../index.html" class="btn-voltar">
+  <span class="setina"></span>
+  Voltar
+</a>
+
+<!-- BANNER -->
+<section class="banner">
+  <h1>Os melhores chocolates para adoçar seu dia!</h1>
+  <p>Qualidade Premium em cada mordida.</p>
+  <a href="#produtos" class="btn">Ver Chocolates</a>
+</section>
+
+<section id="produtos" class="produtos">
+  <h2>Nossos Chocolates</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="2.png" alt="Chocolate ao Leite">
+      <h3>Chocolate ao Leite</h3>
+      <p><strong>R$ 12,00</strong></p>
+      <button onclick="comprarProduto('Chocolate ao Leite', 'R$ 12,00')">Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="3.png" alt="Chocolate Meio Amargo">
+      <h3>Chocolate Meio Amargo</h3>
+      <p><strong>R$ 15,00</strong></p>
+      <button onclick="comprarProduto('Chocolate Meio Amargo', 'R$ 15,00')">Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="5.png" alt="Chocolate Branco">
+      <h3>Chocolate Branco</h3>
+      <p><strong>R$ 14,00</strong></p>
+      <button onclick="comprarProduto('Chocolate Branco', 'R$ 14,00')">Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="4.png" alt="Caixa Sortida">
+      <h3>Caixa Sortida</h3>
+      <p><strong>R$ 28,00</strong></p>
+      <button onclick="comprarProduto('Caixa Sortida', 'R$ 28,00')">Comprar</button>
+    </div>
+
+  </div>
+</section>
+
+<footer id="contato">
+  <p>📍 Rua das Compras, 100 - SP</p>
+  <p>📞 (11) 98765-4321 | ✉️ contato@supershop.com.br</p>
+  <p>&copy; 2025 Supershop - Todos os direitos reservados.</p>
+</footer>
+
+<script>
+  function comprarProduto(nome, preco) {
+    const params = new URLSearchParams();
+    params.append("produto", nome);
+    params.append("preco", preco);
+    window.location.href = "comprar.html?" + params.toString();
+  }
+</script>
+
+</body>
+</html>
