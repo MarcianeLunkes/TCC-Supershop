@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Bife</title>
+    <link rel="stylesheet" href="15-09.css">
+</head>
+<body>
+    <header>
+        <h1>Bife de Coxão Mole Resfriado</h1>
+        <p>Tipos de carne | Cortes e preparo | Sugestões de receitas</p>
+        <p>O bife de coxão mole é um corte macio, versátil e muito utilizado no dia a dia por seu preparo rápido e sabor marcante. Ideal para grelhar, fritar ou fazer à milanesa.</p>
+    </header>
+
+    <section>
+        <h2>O que vamos conhecer?</h2>
+        <ul>
+            <li>Textura e sabor: corte macio, com pouca gordura, ideal para bifes suculentos e rápidos.</li>
+            <li>Formas de preparo: grelhado, frito, recheado, à milanesa ou em tiras para estrogonofe e refogados.</li>
+            <li>Temperos ideais: alho, cebola, pimenta-do-reino, ervas finas e marinadas simples.</li>
+            <li>Combinações perfeitas: arroz, purê de batata, saladas frescas, legumes assados.</li>
+        </ul>
+
+        <h2>Dicas e receitas</h2>
+        <ul>
+            <li>Como deixar o bife ainda mais macio com marinadas simples.</li>
+            <li>Erros comuns ao fritar bifes e como evitá-los.</li>
+            <li>Sugestões de acompanhamento para um prato completo.</li>
+            <li>Indicação de livros e e-books com receitas práticas do dia a dia.</li>
+        </ul>
+
+        <button onclick="mostrarDetalhes()">Saiba mais do curso</button>
+        <div class="detalhes" id="detalhes">
+        <p>O Curso é 100% gratuito, e com aulas totalmente a ditância, você irá aprender inúmeras receitas tradicionais e novas. 
+        combina aulas teóricas sobre história da alimentação, nutrição e gestão, com aulas práticas em cozinhas-escola para aprender 
+        técnicas de corte, preparo e montagem de pratos.</p>
+    </div>
+    </section>
+
+    <script>
+        function mostrarDetalhes() {
+            const detalhes = document.getElementById("detalhes");
+            if(detalhes.style.display === "block") {
+                detalhes.style.display = "none";
+            } else {
+            detalhes.style.display = "block";
+         }
+        }
+    </script>
+</body>
+</html>

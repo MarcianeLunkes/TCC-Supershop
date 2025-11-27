@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Morangos</title>
+    <link rel="stylesheet" href="morango.css">
+</head>
+<body>
+    <header>
+        <h1>Morangos – Sabores, Tipos e Combinações</h1>
+        <p>Frutas | Morangos Frescos e Derivados | Dicas e Harmonizações</p>
+        <p>O morango é uma fruta versátil e deliciosa, famosa por seu sabor doce com um toque ligeiramente ácido. </p>
+        <p>Perfeito para ser consumido puro, em sobremesas, sucos ou até como acompanhamento, o morango traz frescor e cor aos pratos.</p>
+    </header>
+
+    <section>
+        <h2>O que vamos explorar?</h2>
+        <ul>
+            <li>Tipos de Morango: Frescos, congelados, liofilizados e derivados.</li>
+            <li>Características: Variedades populares e suas diferenças de sabor e textura.</li>
+            <li>Usos Culinários: Sobremesas, saladas, smoothies e até pratos salgados.</li>
+        </ul>
+
+        <h2>Exemplos de Morangos Populares</h2>
+        <ul>
+            <li>Morro Red: Doce e vibrante, ideal para comer puro.</li>
+            <li>Camino Real: Sabor doce e firme, ótimo para geleias.</li>
+            <li>Aliso: Grande e suculento, perfeito para tortas.</li>
+            <li>Fragaria x ananassa: Variedade mais comum, equilibrada e saborosa.</li>
+        </ul>
+        
+        <h2>Dicas e Receitas com Morango</h2>
+        <ul>
+            <li>Montando uma Tábua de Frutas: Combine morangos com queijos e outras frutas.</li>
+            <li>Harmonizações: Morango vai bem com chocolate, queijos e vinhos leves.</li>
+            <li>Receitas: Prepare tortas, mousses, geleias e smoothies.</li>
+        </ul>
+
+        <button onclick="mostrarDetalhes()">Saiba mais do curso</button>
+        <div class="detalhes" id="detalhes">
+        <p>O Curso é 100% gratuito, e com aulas totalmente a ditância, você irá aprender inúmeras receitas tradicionais e novas. 
+        combina aulas teóricas sobre história da alimentação, nutrição e gestão, com aulas práticas em cozinhas-escola para aprender 
+        técnicas de corte, preparo e montagem de pratos.</p>
+    </div>
+    </section>
+
+    <script>
+        function mostrarDetalhes() {
+            const detalhes = document.getElementById("detalhes");
+            if(detalhes.style.display === "block") {
+                detalhes.style.display = "none";
+            } else {
+            detalhes.style.display = "block";
+         }
+        }
+    </script>
+</body>
+</html>

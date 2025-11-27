@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Queijos</title>
+    <link rel="stylesheet" href="queijo.css">
+</head>
+<body>
+    <header>
+        <h1>Queijos – Sabores, tipos e combinações</h1>
+        <p>Laticínios | Queijos artesanais e industrializados | Dicas e harmonizações</p>
+        <p>Os queijos são alimentos derivados do leite, com enorme variedade de sabores, texturas e origens. </p>
+        <p>Podem ser consumidos puros, em receitas salgadas e doces, ou acompanhados de vinhos, frutas e pães.</p>
+    </header>
+
+    <section>
+        <h2>O que vamos explorar?</h2>
+        <ul>
+            <li>Tipos de queijo: frescos, curados, cremosos, azuis, ralados, fundidos e mais.</li>
+            <li>Origem e características: queijos nacionais e importados, artesanais ou industrializados.</li>
+            <li>Texturas e sabores: suaves, intensos, salgados, doces, picantes ou defumados.</li>
+            <li>Usos culinários: sanduíches, massas, gratinados, tábuas de frios, molhos e sobremesas.</li>
+        </ul>
+
+        <h2>Exemplos de queijos populares</h2>
+        <ul>
+            <li>Coalho – Tradicional no churrasco, ótimo grelhado.</li>
+            <li>Gorgonzola – Azul, forte e cremoso. Ideal em molhos, risotos e saladas.</li>
+            <li>Brie e Camembert – Queijos de mofo branco, perfeitos para tábuas e entradas.</li>
+            <li>Parmesão – Curado e intenso, excelente ralado sobre massas e risotos.</li>
+            <li>Muçarela – Leve e versátil, ideal para pizzas, lanches e gratinados.</li>
+            <li>Minas Frescal – Leve e úmido, ótimo para dietas equilibradas e café da manhã.</li>
+        </ul>
+        
+        <h2>Dicas e receitas com queijo</h2>
+        <ul>
+            <li>Como montar uma tábua de queijos e frios para receber bem.</li>
+            <li>Combinações de queijos com vinhos, frutas e geleias.</li>
+            <li>Receitas práticas: pão de queijo, lasanha, quiches, gratinados e patês.</li>
+            <li>Indicação de livros e e-books sobre queijos artesanais e gastronomia com laticínios.</li>
+        </ul>
+
+        <button onclick="mostrarDetalhes()">Saiba mais do curso</button>
+        <div class="detalhes" id="detalhes">
+        <p>O Curso é 100% gratuito, e com aulas totalmente a ditância, você irá aprender inúmeras receitas tradicionais e novas. 
+        combina aulas teóricas sobre história da alimentação, nutrição e gestão, com aulas práticas em cozinhas-escola para aprender 
+        técnicas de corte, preparo e montagem de pratos.</p>
+    </div>
+    </section>
+
+    <script>
+        function mostrarDetalhes() {
+            const detalhes = document.getElementById("detalhes");
+            if(detalhes.style.display === "block") {
+                detalhes.style.display = "none";
+            } else {
+            detalhes.style.display = "block";
+         }
+        }
+    </script>
+</body>
+</html>

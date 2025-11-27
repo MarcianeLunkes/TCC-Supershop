@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supershop</title>
+
+    <!-- Importa os ícones do Font Awesome -->
+    <!-- Essa biblioteca possui vários ícones prontos que podem ser usados com <i class="..."> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css";>
+    
+
+    <!-- Arquivo CSS externo onde você vai estilizar o cabeçalho -->
+    <link rel="stylesheet" href="index2.css">
+</head>
+<body>
+   
+<!-- Cabeçalho da página -->
+<header class="cabecalho">
+   
+    <!-- Container do lado esquerdo: logo + menu -->
+    <div class="container-esquerda">
+
+        <!-- Logo do site -->
+        <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+
+        <!-- Menu principal -->
+        <ul class="lista-menu">
+
+            <!-- ITEM 1: Programação -->
+            <li>
+                <!-- Ícone de código (fas = sólido, fa-code = ícone de código) -->
+                <a href="#"><i class="fa-solid fa-snowflake"></i> Frios</a>
+
+                <!-- Submenu com linguagens -->
+                <ul>
+                    <!-- Ícone do Python (fab = marcas, fa-python = logo Python) -->
+                    <li><a href="Frios/queijos2.html"><i class="fa-solid fa-cheese"></i> Queijos</a></li>
+                    <!-- Ícone do Java -->
+                    <li><a href="Frios/carnes.html"><i class="fa-solid fa-drumstick-bite"></i> Carnes</a></li>
+                    <!-- Ícone do JavaScript -->
+                    <li><a href="Frios/congelados.html"><i class="fa-solid fa-pizza-slice"></i> Produtos congelados</a></li>
+                </ul>
+            </li>
+
+            <!-- ITEM 2: Front-end -->
+            <li>
+                <!-- Ícone laptop/código -->
+                <a href="#"><i class="fa-solid fa-candy-cane"></i> Doces</a>
+                <ul>
+            
+                    <li><a href="Doces/bolo.html"><i class="fa-solid fa-cake-candles"></i> Bolos</a></li>
+                    <li><a href="Doces/chocolate.html"><i class="fa-solid fa-cookie"></i> Chocolates</a></li>
+                    <li><a href="Doces/sorvete.html"><i class="fa-solid fa-ice-cream"></i> Sorvetes</a></li>
+                </ul>
+            </li>
+
+            <!-- ITEM 3: Infraestrutura -->
+            <li>
+                <a href="#"><i class="fa-solid fa-pepper-hot"></i></i> Hortifruti</a>
+                <ul>
+                    <li><a href="Hortifuti/fruta.html"><i class="fa-solid fa-apple-whole"></i> Frutas</a></li>
+                    <li><a href="Hortifuti/verduras.html"><i class="fa-solid fa-carrot"></i> Verduras</a></li>
+                </ul>
+            </li>
+
+            <!-- ITEM 4: Business -->
+            <li>
+                <a href="#"><i class="fa-solid fa-bottle-water"></i> Bebidas</a>
+                <ul>
+                    <li><a href="Bebidas/bebidas.html"><i class="fa-solid fa-beer-mug-empty"></i> Bebida alcoólica</a></li>
+                    <li><a href="Bebidas/refri.html"><i class="fa-solid fa-wine-bottle"></i> Refrigerante e Sucos</a></li>
+                </ul>
+            </li>
+
+            <!-- ITEM 5: Design & UX -->
+            <li>
+                <a href="#"><i class="fa-solid fa-basket-shopping"></i> Mercearia</a>
+                <ul>
+                    <li><a href="Mercearia/graos.html"><i class="fa-solid fa-bowl-rice"></i> Grãos</a></li>
+                    <li><a href="Mercearia/enlatados.html"><i class="fa-solid fa-hockey-puck"></i> Enlatados</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Container do lado direito: ícones de atalho -->
+    <div class="container-direita">
+        <!-- Ícone de coração -->
+        <a href="#"><i class="fa-solid fa-bell-concierge"></i></a>
+        <!-- Ícone de home -->
+        <a href="#"><i class="fas fa-home"></i></a>
+        <!-- Ícone de usuário -->
+        <a href="#"><i class="fas fa-user"></i></a>
+    </div>
+</header>
+
+<section class="receita-semana">
+    <div class="receita-container">
+        <img src="16.jpg" alt="Lasanha feita com ingredientes do mercado">
+        <div class="receita-conteudo">
+            <h2>Receita da Semana</h2>
+            <p>Aprenda a fazer uma lasanha deliciosa usando ingredientes frescos e selecionados do nosso mercado!</p>
+            <a href="lasanha.html" class="botao-receita">Ver Receita</a>
+        </div>
+    </div>
+</section>
+
+
+<main class="conteudo">
+    
+    <section class="introducao">
+        <h1>Bem-vindo ao Supershop.</h1>
+        <p>O Supershop e um site criado para você realizar as suas compras com garantir, conforto e facilidade.</p>
+        <img src="2.jpg" alt="mercado">
+    </section>
+
+    <section class="beneficios">
+        <h2>Por que comprar no site Supershop?</h2>
+        <ul>
+            <li><i class="fa-solid fa-check"></i> Garantia.</li>
+            <li><i class="fa-solid fa-check"></i> Facilidade.</li>
+            <li><i class="fa-solid fa-check"></i> Conforto.</li>
+        </ul>
+    </section>
+
+    <section class="recursos">
+        <h2>Promoção</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="carne.png" alt="online">
+                <h3>De R$ 47,00 por R$ 43,00 </h3>
+                <p>Bife De Coxão Mole</p>
+                <a href="bife.html">Acesse!</a>
+            </div>
+
+            <div class="card">
+                <img src="Queijo.png" alt="van">
+                <h3>De R$ 13,00 por R$ 8,00</h3>
+                <p>Queijo Fatiado Mussarela</p>
+                <a href="queijo.html">Acesse!</a>
+            </div>
+
+            <div class="card">
+                <img src="Morango.png" alt="Entrega">
+                <h3>De R$ 12,00 por R$ 7,00</h3>
+                <p>De nós para ti</p>
+                <a href="morango.html">Acesse!</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="rodape">
+    <div class="container-rodape">
+    <p>📍 Rua das Compras, 100 - São Paulo/SP</p>
+    <p>📞 (11) 98765-4321 | ✉️ contato@supershop.com.br</p>
+    <p>&copy; 2025 Supershop - Todos os direitos reservados.</p>
+    <ul class="links-rodape">
+        <li><a href="contato.html">Contato</a></li>
+    </ul>
+    </footer>
+    </div>
+</body>
+</html>
